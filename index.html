@@ -2,15 +2,33 @@
 <html>
 
 <head>
-    <title>Testovací dokument</title>
+    <title>Viewer.js Example - Word Preview</title>
+    <link rel="stylesheet" href="/viewer.css">
+    <style>
+        #viewer {
+            height: 600px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Word dokument</h1>
-    <iframe src="NavrhAplikacie.docx" style="width: 100%; height: 600px;"></iframe>
-
-    <h1>Excel súbor</h1>
-    <iframe src="CenovaPonuka.xlsx" style="width: 100%; height: 600px;"></iframe>
+    <div id="viewer"></div>
+    <div id="viewer2"></div>
+    <script src="/viewer.js"></script>
+    <script>
+        const viewer = new Viewer(document.getElementById('viewer'), {
+            url: 'NavrhAplikacie.docx',
+            navbar: false,
+            toolbar: false,
+        });
+    </script>
+    <script>
+        const viewer2 = new Viewer(document.getElementById('viewer2'), {
+            url: 'CenovaPonuka.xlsx',
+            navbar: false,
+            toolbar: false,
+        });
+    </script>
 </body>
 
 </html>
