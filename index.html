@@ -3,7 +3,7 @@
 
 <head>
     <title>Viewer.js Example - Word Preview</title>
-    <link rel="stylesheet" href="https://peterkacerik.github.io/previewoffice/viewer.css">
+    <link rel="stylesheet" href="/viewer.css">
     <style>
         #viewer {
             height: 600px;
@@ -14,17 +14,17 @@
 <body>
     <div id="viewer"></div>
     <div id="viewer2"></div>
-    <script src="https://peterkacerik.github.io/previewoffice/viewer.js"></script>
+    <script src="/viewer.js"></script>
     <script>
         const viewer = new Viewer(document.getElementById('viewer'), {
-            url: 'https://peterkacerik.github.io/previewoffice/NavrhAplikacie.docx',
+            url: '/NavrhAplikacie.docx',
             navbar: false,
             toolbar: false,
         });
     </script>
     <script>
         const viewer2 = new Viewer(document.getElementById('viewer2'), {
-            url: 'https://peterkacerik.github.io/previewoffice/CenovaPonuka.xlsx',
+            url: '/CenovaPonuka.xlsx',
             navbar: false,
             toolbar: false,
         });
