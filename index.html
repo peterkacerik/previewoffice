@@ -3,7 +3,7 @@
 
 <head>
     <title>Viewer.js Example - Word Preview</title>
-    <link rel="stylesheet" href="/previewoffice/viewer.css">
+    <link rel="stylesheet" href="/viewer.css">
     <style>
         #viewer {
             height: 600px;
@@ -14,17 +14,17 @@
 <body>
     <div id="viewer"></div>
     <div id="viewer2"></div>
-    <script src="/previewoffice/viewer.js"></script>
+    <script src="/viewer.js"></script>
     <script>
         const viewer = new Viewer(document.getElementById('viewer'), {
-            url: '/previewoffice/NavrhAplikacie.docx',
+            url: '/NavrhAplikacie.docx',
             navbar: false,
             toolbar: false,
         });
     </script>
     <script>
         const viewer2 = new Viewer(document.getElementById('viewer2'), {
-            url: '/previewoffice/CenovaPonuka.xlsx',
+            url: '/CenovaPonuka.xlsx',
             navbar: false,
             toolbar: false,
         });
