@@ -8,17 +8,12 @@
         #viewer {
             height: 600px;
         }
-
-        #viewer2 {
-            height: 600px;
-        }
     </style>
 </head>
 
 <body>
     <h1>Preview</h1>
     <div id="viewer"></div>
-    <div id="viewer2"></div>
     <script src="/viewer.js"></script>
     <script>
         const viewer = new Viewer(document.getElementById('viewer'), {
@@ -27,13 +22,7 @@
             toolbar: true,
         });
     </script>
-    <script>
-        const viewer2 = new Viewer(document.getElementById('viewer2'), {
-            url: 'https://stalwart-syrniki-6e2af7.netlify.app/CenovaPonuka.xlsx',
-            navbar: true,
-            toolbar: true,
-        });
-    </script>
+
 </body>
 
 </html>
